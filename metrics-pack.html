@@ -452,12 +452,12 @@ body.edit-active .report-editable{background:rgba(219,234,254,.72)}
       <tr><th>Phase</th><th>Thời gian</th><th>Câu hỏi trung tâm</th><th>Đầu ra</th></tr>
     </thead>
     <tbody class="report-editable">
-      <tr><td>0. Chốt phạm vi</td><td>10 phút</td><td>Dự án nào, persona nào, core job nào?</td><td>Phạm vi bài làm</td></tr>
-      <tr><td>1. Core Action</td><td>15 phút</td><td>Hành vi nào gần core value nhất?</td><td>Core Action Card</td></tr>
-      <tr><td>2. Nature &amp; cadence</td><td>15 phút</td><td>Nhu cầu tự nhiên xuất hiện bao lâu một lần?</td><td>Action Nature Card + kết luận cadence</td></tr>
-      <tr><td>3. Metric System + Retention</td><td>25 phút</td><td>Đo core action bằng gì, quay lại tính thế nào?</td><td>Metric System + Retention Definition</td></tr>
-      <tr><td>4. Ghi nhanh: Loop + Tracking</td><td>15 phút</td><td>Loop nào di chuyển metric đó, đo bằng event gì?</td><td>Loop 2 chu kỳ + 4–8 events</td></tr>
-      <tr><td>5. Tự soi lỗi &amp; nộp</td><td>10 phút</td><td>Bài có mắc lỗi kinh điển nào không?</td><td>Bản hoàn chỉnh</td></tr>
+      <tr><td>0. Chốt phạm vi</td><td>10 phút</td><td>Dự án nào, persona nào, core job nào?</td><td><b>Dự án:</b> AI Game Report Assistant.<br><b>Core job:</b> Tiết kiệm thời gian tổng hợp số liệu để ra quyết định chỉnh ngân sách.</td></tr>
+      <tr><td>1. Core Action</td><td>15 phút</td><td>Hành vi nào gần core value nhất?</td><td><b>Core Action:</b> <code>report_reviewed</code> (Review xong báo cáo định kỳ).<br><i>Không chọn "hệ thống sinh báo cáo" vì đó chỉ là output.</i></td></tr>
+      <tr><td>2. Nature &amp; cadence</td><td>15 phút</td><td>Nhu cầu tự nhiên xuất hiện bao lâu một lần?</td><td><b>Cadence:</b> Weekly (UA) / Monthly (Biz).<br><i>Lý do:</i> Nhịp chốt số thực tế không diễn ra theo ngày (Daily).</td></tr>
+      <tr><td>3. Metric System + Retention</td><td>25 phút</td><td>Đo core action bằng gì, quay lại tính thế nào?</td><td><b>NSM:</b> Weekly Deep-Reviewed Reports.<br><b>Retention:</b> Đo theo window tuần (W1, W2...).<br><b>Counter-metric:</b> Tỉ lệ report bị bỏ qua (Ignored Rate).</td></tr>
+      <tr><td>4. Ghi nhanh: Loop + Tracking</td><td>15 phút</td><td>Loop nào di chuyển metric đó, đo bằng event gì?</td><td><b>Loop:</b> Workflow tự nhiên (Chốt số → Review → Action → Đợi chốt số tiếp).<br><b>Tracking:</b> 6 events (kết nối nguồn, review xong, share...).</td></tr>
+      <tr><td>5. Tự soi lỗi &amp; nộp</td><td>10 phút</td><td>Bài có mắc lỗi kinh điển nào không?</td><td><b>Kết quả:</b> Đạt 5/5 Gate. Metrics nhất quán, tránh được lỗi ép nhịp Daily.</td></tr>
     </tbody>
   </table>
 </div>
@@ -791,5 +791,6 @@ body.edit-active .report-editable{background:rgba(219,234,254,.72)}
 </script>
 </body>
 </html>
+
 
 
